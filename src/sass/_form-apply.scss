@@ -1,0 +1,17 @@
+#form-apply {
+  background-color: $gray;
+
+  .file-row {
+    display: flex;
+
+    p,
+    button {
+      flex: 1;
+    }
+
+    p {
+      margin: 0;
+      vertical-align: middle;
+    }
+  }
+}

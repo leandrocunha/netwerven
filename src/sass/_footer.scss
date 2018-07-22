@@ -1,0 +1,15 @@
+#footer {
+  .container {
+    border-top: $gray 1px solid;
+
+    dl {
+      &#follow {
+        columns: 2;
+      }
+
+      dt {
+        display: block;
+      }
+    }
+  }
+}
