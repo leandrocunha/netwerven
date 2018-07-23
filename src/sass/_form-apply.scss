@@ -41,6 +41,10 @@
       vertical-align: middle;
     }
 
+    input[type='file'] {
+      display: none;
+    }
+
     .btn {
       font-size: 0.8rem;
       font-weight: bold;

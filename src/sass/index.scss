@@ -1,9 +1,9 @@
 @import 'fonts';
 @import 'colors';
-$border-width: 0;
 $font-family-sans-serif: $Museo;
 $font-size-base: 1rem !default;
 $font-size-sm: ($font-size-base * 0.875) !default;
+$form-feedback-valid-color: transparent;
 $transition-base: all 0.2s ease-in-out;
 
 @import 'forms';
@@ -14,3 +14,32 @@ $transition-base: all 0.2s ease-in-out;
 @import 'faq';
 @import 'footer';
 @import 'node_modules/bootstrap/scss/bootstrap';
+
+.form-control {
+  border-color: transparent;
+  transition: $transition-base;
+}
+
+.form-group {
+  position: relative;
+
+  &:after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: $primary;
+    content: '\f00c';
+    display: block;
+    height: 1rem;
+    opacity: 0;
+    position: absolute;
+    top: 7px;
+    transition: $transition-base;
+    right: 28px;
+    width: 1rem;
+  }
+  &.is-valid {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
