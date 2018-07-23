@@ -1,0 +1,43 @@
+#Hero {
+  background-image: url('./../images/bg-hero.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 3rem 0;
+
+  .cta {
+    background-color: rgba($black, 0.5);
+    color: $white;
+    font-family: $YanoneKaffeesatz;
+    padding: 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    h2 {
+      font-size: 5rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    p {
+      font-size: 2rem;
+      line-height: 1.4rem;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #Hero {
+    padding: 1rem 0;
+
+    .cta {
+      h2 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

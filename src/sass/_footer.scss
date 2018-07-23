@@ -1,14 +1,116 @@
-#footer {
-  .container {
-    border-top: $gray 1px solid;
+#Footer {
+  margin: 2rem 0;
+
+  .footer-wrapper {
+    border-top: rgba($black, 0.1) 1px solid;
+    padding-top: 2rem;
 
     dl {
+      padding: 0;
+
       &#follow {
-        columns: 2;
+        dd {
+          float: left;
+          width: 45%;
+
+          &:nth-child(even) {
+            margin: 0 0.5rem 0 0;
+          }
+
+          .newsletter {
+            svg {
+              left: 4px;
+              top: 4px;
+            }
+          }
+          .instagram {
+            svg {
+              left: 5px;
+            }
+          }
+          .tumblr {
+            svg {
+              left: 6px;
+            }
+          }
+          .linkedin {
+            svg {
+              left: 5px;
+            }
+          }
+          .facebook {
+            svg {
+              left: 6px;
+            }
+          }
+          .pinterest {
+            svg {
+              left: 6px;
+            }
+          }
+          .youtube {
+            svg {
+              left: 3px;
+            }
+          }
+          .googleplus {
+            svg {
+              left: 3px;
+            }
+          }
+        }
       }
 
       dt {
-        display: block;
+        margin-bottom: 1rem;
+      }
+
+      dd {
+        font-size: 0.9rem;
+
+        a {
+          color: rgba($black, 0.5);
+          display: flex;
+
+          span {
+            border: rgba($black, 0.5) 1px solid;
+            border-radius: 100px;
+            display: inline-block;
+            height: 1.5rem;
+            margin: 0 0.5rem 0 0;
+            padding: 0.5rem;
+            position: relative;
+            width: 1.5rem;
+
+            svg {
+              left: 4px;
+              position: absolute;
+              top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #Footer {
+    .footer-wrapper {
+      dl {
+        padding: 0 15px;
+
+        &#follow {
+          dd {
+            margin: 0 0 1rem 0 !important;
+          }
+        }
+
+        dd {
+          display: block;
+          float: left;
+          width: 50%;
+        }
       }
     }
   }

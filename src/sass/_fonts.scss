@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700');
+
+@font-face {
+  font-family: 'Museo500-Regular';
+  src: url('../fonts/Museo500-Regular-webfont.woff2') format('woff2'),
+    url('../fonts/Museo500-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$Museo: 'Museo500-Regular', sans-serif;
+$YanoneKaffeesatz: 'Yanone Kaffeesatz', sans-serif;

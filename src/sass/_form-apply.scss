@@ -1,8 +1,32 @@
-#form-apply {
+#FormApply {
   background-color: $gray;
+  padding: 3rem 0;
+
+  .title-section {
+    font-family: $YanoneKaffeesatz;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .title-form {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .form-row {
+    margin-bottom: 2rem;
+
+    textarea {
+      min-height: 6.45rem;
+    }
+  }
 
   .file-row {
     display: flex;
+    margin: 0.3rem 0;
 
     p,
     button {
@@ -10,8 +34,52 @@
     }
 
     p {
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 35px;
       margin: 0;
       vertical-align: middle;
+    }
+
+    .btn {
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-left: 0.3rem;
+      padding: 0.5rem 0;
+    }
+  }
+
+  .send-a-copy {
+    max-width: 31.9%;
+
+    p {
+      font-size: 0.87rem;
+      line-height: 35px;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #FormApply {
+    .title-section {
+      font-size: 2.3rem;
+    }
+
+    .file-row {
+      display: block;
+
+      .btn {
+        width: 46%;
+
+        &:last-of-type {
+          float: right;
+        }
+      }
+    }
+
+    .send-a-copy {
+      max-width: initial;
     }
   }
 }

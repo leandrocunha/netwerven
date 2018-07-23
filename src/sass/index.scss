@@ -1,6 +1,15 @@
-@import 'node_modules/bootstrap/scss/bootstrap';
-
+@import 'fonts';
 @import 'colors';
+$border-width: 0;
+$font-family-sans-serif: $Museo;
+$font-size-base: 1rem !default;
+$font-size-sm: ($font-size-base * 0.875) !default;
+$transition-base: all 0.2s ease-in-out;
+
+@import 'forms';
 @import 'navbar';
+@import 'hero';
 @import 'form-apply';
+@import 'faq';
 @import 'footer';
+@import 'node_modules/bootstrap/scss/bootstrap';

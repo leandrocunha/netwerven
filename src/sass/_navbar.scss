@@ -1,0 +1,99 @@
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $white;
+
+#Navbar {
+  .navbar {
+    background-color: $black;
+
+    .hamburguer {
+      display: none;
+    }
+
+    .navbar-brand {
+      font-family: $YanoneKaffeesatz;
+      font-size: 1.7rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-nav {
+      .nav-item {
+        font-size: 0.8rem;
+        margin: 0 1rem;
+        text-transform: uppercase;
+
+        .nav-link {
+          border-bottom: $black 2px solid;
+          padding: 0;
+          transition: $transition-base;
+
+          &:hover {
+            border-bottom: $white 2px solid;
+          }
+        }
+      }
+    }
+
+    form {
+      .form-group {
+        margin: 0;
+
+        .form-control {
+          border: 0;
+          font-size: 0.8rem;
+          padding-right: 0;
+          text-transform: uppercase;
+          width: 14rem;
+        }
+      }
+
+      .btn {
+        background-color: $white;
+        border: 0;
+        font-size: 0.8rem;
+      }
+    }
+
+    .btn-link {
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #Navbar {
+    .navbar {
+      .navbar-brand {
+        flex: 1;
+      }
+
+      .navbar-nav {
+        display: none;
+      }
+
+      .hamburguer {
+        display: block;
+        margin: -0.8rem 1rem 0 0;
+        padding: 0;
+      }
+
+      .briefcase {
+        position: absolute;
+        right: 0.3rem;
+        top: 0.1rem;
+      }
+    }
+
+    .form-inline {
+      width: 100%;
+
+      .form-group {
+        flex: 1;
+
+        .form-control {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
