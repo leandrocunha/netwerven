@@ -2,7 +2,7 @@ $navbar-dark-color: $white;
 $navbar-dark-hover-color: $white;
 
 #Navbar {
-  .navbar {
+  > .navbar {
     background-color: $black;
 
     .hamburguer {
@@ -62,7 +62,7 @@ $navbar-dark-hover-color: $white;
 
 @media (max-width: 768px) {
   #Navbar {
-    .navbar {
+    > .navbar {
       .navbar-brand {
         flex: 1;
       }
